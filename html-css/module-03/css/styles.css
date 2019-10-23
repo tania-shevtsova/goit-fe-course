@@ -88,10 +88,20 @@ body {
   color: #b4ad9e;
   font-size: 14px;
   line-height: 17px;
+  margin: 0;
+}
+
+.articles-name {
+  margin-bottom: 30px;
+  padding: 26px 0 0 0;
 }
 
 .articles-description h2 {
   line-height: 36px;
+  margin: 0;
+}
+
+.articles-list-item h2 {
   margin: 0;
 }
 
@@ -121,6 +131,12 @@ body {
   border-color: rgb(98, 98, 98);
   border-style: solid;
   padding: 21px 38px;
+}
+
+.load-more-button:hover,
+.load-more-button:focus {
+  background-color: #44b6f5;
+  cursor: pointer;
 }
 
 .visually-hidden:not(:focus):not(:active),
