@@ -84,6 +84,10 @@ body {
   margin-bottom: 0;
 }
 
+.articles-img {
+  margin-bottom: 26px;
+}
+
 .articles-name {
   color: #b4ad9e;
   font-size: 14px;
@@ -93,7 +97,6 @@ body {
 
 .articles-name {
   margin-bottom: 30px;
-  padding: 26px 0 0 0;
 }
 
 .articles-description h2 {
