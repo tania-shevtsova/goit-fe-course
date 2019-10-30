@@ -1,0 +1,303 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", "Arial", "sans-serif";
+  color: #555252;
+  font-size: 14px;
+  line-height: 26px;
+  background: #ffffff;
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+img {
+  display: block;
+  max-width: auto; 
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.page-navigation {
+  padding: 36px 0;
+  vertical-align: middle;
+}
+
+.page-navigation a {
+  text-decoration: none;
+  display: block;
+}
+
+.site-logo {
+  color: #555252;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  float: left;
+}
+
+
+.site-logo p:first-letter {
+  color: #38c1a4;
+  font-weight: 600;
+}
+
+.site-logo p {
+  margin: 0;
+}
+
+.site-navigation {
+  float: right;
+  width: 490px;
+  list-style: none;
+  margin-top: 12px;
+  padding: 0;
+
+}
+
+.site-navigation a {
+  line-height: 13px;
+  font-weight: 700;
+  color: #0f0101;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  content: '';
+  color: #38c1a4;
+}
+
+.site-navigation li {
+  float: left;
+}
+
+.site-navigation li:not(:last-child) {
+  margin-right: 34px;
+}
+
+.main-menu {
+  margin-bottom: 109px;
+}
+
+h2 {
+  margin: 0;
+}
+
+h2 {
+  color: #515151;
+  font-size: 48px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.decoration-line::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: #1abc9c;
+  color: #1abc9c;
+  height: 7px;
+  width: 160px;
+}
+
+.featured-products {
+  margin-bottom: 103px;
+}
+
+.featured-products-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.featured-products-list li {
+  float: left;
+  margin-right: 30px;
+}
+
+.featured-products-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.about {
+  font-size: 0;
+}
+
+.description {
+  margin: 0;
+  display: inline-block;
+  border: none;
+  background-color: #323232;
+  color: #ffffff;
+  height: 40px;
+  width: 200px;
+  padding: 7px;
+  line-height: 14px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.price {
+  margin: 0;
+  display: inline-block;
+  border: none;
+  background-color: #8c8c8c;
+  color: #ffffff;
+  height: 40px;
+  width: 55px;
+  padding: 7px;
+  line-height: 14px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.featured-products-list-item:hover {
+  cursor: pointer;
+}
+
+
+.featured-products-list-item:hover .description {
+  content: '';
+  background-color: #1abc9c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.featured-products-list-item:hover .price {
+  background-color: #7fd9c7;
+}
+
+.featured-products-list-item:nth-child(-n+4) {
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.decoration-line {
+  margin-bottom: 92px;
+}
+
+div.about p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* latest news section */
+
+.latest-news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.latest-news-list-item {
+  width: 350px;
+}
+
+.latest-news-list li {
+  float: left;
+}
+
+.latest-news-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.latest-news-list-item img {
+  margin-bottom: 14px;
+}
+
+.latest-news-list h4 {
+  font-size: 18px;
+}
+
+h4 {
+  margin: 0;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+
+.news-decoration-line::after {
+  width: 136px;
+  height: 3px;
+  content: '';
+  display: block;
+  border: none;
+  background-color: #1abc9c;
+  color: #1abc9c;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.news-decoration-line {
+  margin-bottom: 28px;
+}
+
+.latest-news-list-item p {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.read-more {
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #4ec6ab;
+  padding: 20px 40px;
+  border-radius: 3px;
+}
+
+.read-more:hover {
+  cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
