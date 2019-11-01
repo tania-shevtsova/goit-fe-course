@@ -135,6 +135,10 @@ h2::after {
   padding: 0;
 }
 
+.featured-products-list-item a {
+  display: block;
+}
+
 .featured-products-list li {
   float: left;
   margin-right: 30px;
@@ -266,12 +270,14 @@ h4::after {
   border-radius: 3px;
   text-align: center;
   line-height: 52px;
-}
-
-.read-more a {
   text-decoration: none;
   color: #ffffff;
   font-size: 16px;
+}
+
+.read-more a {
+  display: block;
+  margin: 0;
 }
 
 .read-more a:hover {
