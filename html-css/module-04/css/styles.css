@@ -280,7 +280,7 @@ h4::after {
   margin: 0;
 }
 
-.read-more a:hover {
+.read-more:hover {
   cursor: pointer;
 }
 
