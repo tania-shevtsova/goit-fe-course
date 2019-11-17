@@ -690,13 +690,18 @@ input[type="radio"].visually-hidden {
   }
 }
 
-@media (min-resolution: 96dpi) {
+@media (-webkit-min-device-pixel-ratio: 1),
+  (-o-min-device-pixel-ratio: 1/1),
+  (min-resolution: 96dpi) {
   .banner {
     background-image: url("../img/banner/banner.png");
   }
 }
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .banner {
     background-image: url("../img/banner/banner@2x.png");
     background-size: cover;
