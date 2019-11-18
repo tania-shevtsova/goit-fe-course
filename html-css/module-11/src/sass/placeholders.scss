@@ -1,0 +1,57 @@
+%main-section-title {
+  display: block;
+  text-align: center;
+  font-family: $kaushan, cursive;
+  font-size: 24px;
+  color: $section-color-2;
+  font-weight: $normal;
+  margin-bottom: 25px;
+}
+
+%main-section-subtitle {
+  text-align: center;
+  font-family: $montserrat, $sans;
+  font-size: 30px;
+  color: $section-color-2;
+  font-weight: $bold;
+  text-transform: uppercase;
+  position: relative;
+}
+
+%services__description {
+  position: relative;
+  font-family: $montserrat, $sans;
+  font-weight: $bold;
+  font-size: 14px;
+  color: $section-color-2;
+  text-transform: uppercase;
+}
+
+%services__about {
+  font-family: $roboto, $sans;
+  color: $section-color;
+  font-size: 15px;
+  font-weight: $normal;
+}
+
+%section__team--name {
+  font-family: $montserrat, $sans;
+  font-size: 14px;
+  color: $section-color-2;
+  text-transform: uppercase;
+  font-weight: $semibold;
+  display: block;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 14px;
+}
+
+%section__team--occupation {
+  font-family: $roboto, $sans;
+  font-size: 15px;
+  color: $section-color;
+  font-style: italic;
+  font-weight: $light;
+  text-align: center;
+  line-height: 18px;
+}
