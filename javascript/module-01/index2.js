@@ -1,11 +1,12 @@
-'use strict';
+"use strict";
 
-const total=100;
-const ordered=50;
+function task2() {
+  const total = 100;
+  const ordered = 50;
 
-if(ordered<=total) {
+  if (ordered <= total) {
     console.log("Заказ оформлен, с вами свяжется менеджер!");
-}
-else {
+  } else {
     console.log("На складе недостаточно товаров!");
+  }
 }
