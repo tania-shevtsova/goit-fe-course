@@ -5,7 +5,7 @@ let total=0;
 
 do{
     input=prompt('Please, enter a number:');
-    let numbers;
+    let numbers=[];
     if(isNaN(input) || input===null){
     if(isNaN(input)){
             alert('Please, try again!');
@@ -17,7 +17,7 @@ do{
     }
     
     else {
-        numbers=[Number(input)];
+        numbers.push(Number(input));
         
         for(let i=0;i<numbers.length;i++){
             if(numbers[i]!=0){
