@@ -3,7 +3,6 @@
 const formatString=function(string) {
     let stringArr=string.split('');
     let formattedString;
-    let fm;
 
  
         if(stringArr.length<=40) {
