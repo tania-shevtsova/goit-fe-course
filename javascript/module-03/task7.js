@@ -1,11 +1,6 @@
 const Transaction = {
-  type: "DEPOSIT",
-  id: "deposit",
-  amount: 20000,
-
-  type: "WITHDRAW",
-  id: "withdraw",
-  amount: 1000
+  DEPOSIT: 'deposit',
+  WITHDRAW: 'withdraw',
 };
 
 const account = {
@@ -20,14 +15,12 @@ const account = {
    * Принимает сумму и тип транзакции.
    */
   createTransaction(amount, type) {
-    for (let trans in Transaction) {
-      if (trans.type == type) {
-        return;
-      } else {
-        this.transactions.push(type);
-      }
-    }
-    return type;
+   const trans = {
+     id: this.transactions.length,
+     type,
+     amount,
+   }
+   return trans;
   },
 
   /*
@@ -37,9 +30,9 @@ const account = {
    * после чего добавляет его в историю транзакций
    */
   deposit(amount) {
-    if(createTransaction(amount, type)){
-      this.transactions.push(type);
-    }
+    const newTransaction=this.createTransaction(amount, Transaction.DEPOSIT);
+    this.transactions.push(newTransaction);
+    this.balance+=amount;
   },
 
   /*
@@ -52,14 +45,14 @@ const account = {
    * о том, что снятие такой суммы не возможно, недостаточно средств.
    */
   withdraw(amount) {
-    let temp=0;
 
       if(amount>this.balance){
         console.log("Error! not enough funds!");
       }
-    else{
-      createTransaction(amount, type);
-      transactions.push(type);
+    else {
+      const withdrawTransaction=this.createTransaction(amount, Transaction.WITHDRAW);
+      this.transactions.push(withdrawTransaction);
+      this.balance-=amount;
     }
   },
 
@@ -67,17 +60,16 @@ const account = {
    * Метод возвращает текущий баланс
    */
   getBalance() {
-    return 
+    return this.balance;
   },
 
   /*
    * Метод ищет и возвращает объект транзации по id
    */
   getTransactionDetails(id) {
-    for(let i=0;i<Transaction.length;i++){
-      if(Transaction.id[i]==id){
-        console.log(Transaction.id);
-        return Transaction.id[i];
+    for(let i=0;i<this.transactions.length;i++){
+      if(this.transactions[i].id==id){
+        return this.transactions[i];
       }
     }
   },
@@ -86,5 +78,23 @@ const account = {
    * Метод возвращает количество средств
    * определенного типа транзакции из всей истории транзакций
    */
-  getTransactionTotal(type) {}
+  getTransactionTotal(type) {
+    let result=[];
+    for(let i=0;i<this.transactions.length;i++){
+      if(this.transactions[i].type==Transaction.DEPOSIT){
+        result.push(this.transactions[i]);
+   
+      }
+    }
+    return result;
+ 
+  }
 };
+
+
+account.deposit(3000);
+account.deposit(1000);
+account.withdraw(200);
+console.log(account.getBalance());
+console.log(account.getTransactionDetails(1));
+console.log(account.getTransactionTotal(Transaction.DEPOSIT));
