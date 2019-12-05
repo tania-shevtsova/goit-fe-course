@@ -1,6 +1,4 @@
-"use strict";
-
-function task5() {
+export function task5() {
   let inputMessage = prompt("В какую страну вы хотели бы оформить доставку?");
 
   let cost;

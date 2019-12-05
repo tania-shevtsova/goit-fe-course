@@ -1,6 +1,4 @@
-"use strict";
-
-function task4() {
+export function task4() {
   const credits = 23580;
   const pricePerDroid = 3000;
   const inputMessage = prompt("Какое количество дроидов Вы хотели бы купить?");

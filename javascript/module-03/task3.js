@@ -1,5 +1,4 @@
-'use strict';
-
+export function task3(){
 const findBestEmployee=function(employees){
     const keys=Object.keys(employees);
     let max=0;
@@ -39,3 +38,4 @@ console.log(
       chelsy: 38,
     }),
   ); // lux
+}

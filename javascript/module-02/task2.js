@@ -1,5 +1,4 @@
-"use strict";
-
+export function task2 () {
 const calculateEngravingPrice = function(message, pricePerWord) {
   let words = message.split(" ");
   let totalPrice = 0;
@@ -26,3 +25,4 @@ console.log(
 console.log(calculateEngravingPrice("Donec orci lectus aliquam est", 40));
 
 console.log(calculateEngravingPrice("Donec orci lectus aliquam est", 20));
+  }

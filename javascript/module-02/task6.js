@@ -1,5 +1,4 @@
-'use strict';
-
+export function task6(){
 let input=null;
 let total=0;
 
@@ -30,3 +29,4 @@ do{
 }while(true);
 
 console.log(`Total sum: ${total}`);
+}

@@ -1,5 +1,4 @@
-'use strict';
-
+export function task4(){
 const formatString=function(string) {
     let stringArr=string.split('');
     let formattedString;
@@ -32,3 +31,4 @@ console.log(
   ),
 );
 // вернется форматированная строка
+  }

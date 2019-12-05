@@ -1,5 +1,4 @@
-'use strict';
-
+export function task4(){
 const countTotalSalary=function(employees) {
     const keys=Object.values(employees);
     let total=0;
@@ -27,3 +26,4 @@ console.log(
     chelsy: 150,
   }),
 ); // 400
+}

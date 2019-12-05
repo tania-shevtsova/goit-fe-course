@@ -1,3 +1,4 @@
+export function task7(){
 const Transaction = {
   DEPOSIT: 'deposit',
   WITHDRAW: 'withdraw',
@@ -98,3 +99,4 @@ account.withdraw(200);
 console.log(account.getBalance());
 console.log(account.getTransactionDetails(1));
 console.log(account.getTransactionTotal(Transaction.DEPOSIT));
+}

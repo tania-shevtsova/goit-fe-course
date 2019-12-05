@@ -1,6 +1,4 @@
-"use strict";
-
-function task1() {
+export function task1() {
   const name = "Генератор защитного поля";
   let price = 1000;
 

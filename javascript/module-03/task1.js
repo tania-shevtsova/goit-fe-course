@@ -1,5 +1,4 @@
-'use strict';
-
+export function task1(){
 const user = {
     name: 'Mango',
     age: 20,
@@ -17,4 +16,5 @@ const user = {
       console.log('Prop:', key);
       console.log('Value:', user[key]);
   }
+}
 

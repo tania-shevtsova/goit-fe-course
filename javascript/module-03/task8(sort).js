@@ -1,5 +1,4 @@
-"use strict";
-
+export function task8(){
 // const arr = [6, 7, 8, 3, 4, 5];
 // const my_sort = (arr) => {
 //    let isSorted;
@@ -42,3 +41,4 @@ return sorted;
 };
 
 console.log(my_sort(arr)); //должен вывести 3 4 5 6 7 8
+}

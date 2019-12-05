@@ -1,6 +1,4 @@
-"use strict";
-
-function task3() {
+export function task3() {
   const ADMIN_PASSWORD = "jqueryismyjam";
   let message;
   const inputMessage = prompt("Please, enter your password:");

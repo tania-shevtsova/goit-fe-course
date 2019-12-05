@@ -1,5 +1,4 @@
-'use strict';
-
+export function task5(){
 const checkForSpam=function(str){
     str=str.toLowerCase();
     let array=str.split(",");
@@ -19,3 +18,4 @@ console.log(checkForSpam('JavaScript weekly newsletter')); // false
 console.log(checkForSpam('Get best SALE offers now!')); // true
 
 console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+}

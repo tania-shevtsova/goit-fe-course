@@ -1,6 +1,4 @@
-"use strict";
-
-function task6() {
+export function task6() {
   let input = null;
   let total = 0;
 

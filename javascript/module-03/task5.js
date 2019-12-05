@@ -1,5 +1,4 @@
-"use strict";
-
+export function task5(){
 const products = [
     { name: 'Радар', price: 1300, quantity: 4 },
     { name: 'Сканер', price: 2700, quantity: 3 },
@@ -25,3 +24,4 @@ console.log(getAllPropValues(products, "name")); // ['Радар', 'Сканер
 console.log(getAllPropValues(products, "quantity")); // [4, 3, 7, 2]
 
 console.log(getAllPropValues(products, "category")); // []
+}

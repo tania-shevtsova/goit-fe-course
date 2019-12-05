@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-    
-    <!-- <script src="task1.js" type="module"></script> -->
-    <!-- <script src="task2.js" type="module"></script> -->
-    <!-- <script src="task3.js" type="module"></script> -->
-    <!-- <script src="task4.js" type="module"></script> -->
-    <!-- <script src="task5.js" type="module"></script> -->
-    <!-- <script src="task6.js" type="module"></script> -->
-    <script src="task7.js" type="module"></script>
-</body>
+  </head>
+  <body>
+
+    <script type="module">
+      import { task1 } from "./task1.js";
+      import { task2 } from "./task2.js";
+      import { task3 } from "./task3.js";
+      import { task4 } from "./task4.js";
+      import { task5 } from "./task5.js";
+      import { task6 } from "./task6.js";
+      import { task7 } from "./task7.js";
+
+      let inputMessage;
+
+      do {
+        inputMessage = prompt("Please, choose a file:");
+        console.clear();
+
+        if (isNaN(inputMessage) || inputMessage === null) {
+          if (isNaN(inputMessage)) {
+            alert("Error!");
+            continue;
+          } else {
+            alert("canceled");
+            break;
+          }
+        } else {
+          inputMessage = Number(inputMessage);
+
+          switch (inputMessage) {
+            case 1:
+              task1();
+              break;
+
+            case 2:
+              task2();
+              break;
+
+            case 3:
+              task3();
+              break;
+
+            case 4:
+              task4();
+              break;
+            case 5:
+              task5();
+              break;
+            case 6:
+              task6();
+              break;
+            case 7:
+              task7();
+              break;
+
+            default:
+              alert("Enter a number from 1 to 6!");
+          }
+        }
+      } while (true);
+    </script>
+  </body>
 </html>
