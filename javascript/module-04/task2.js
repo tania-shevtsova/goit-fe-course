@@ -1,3 +1,4 @@
+export function task2 () {
 const inventory = {
     items: ['Knife', 'Gas mask'],
     add(itemName) {
@@ -28,3 +29,4 @@ const inventory = {
   // Removing Gas mask from inventory
   
   console.log(inventory.items); // ['Knife', 'Medkit']
+}
