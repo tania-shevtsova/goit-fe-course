@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { task1 } from "./task1.js";
+      import { task2 } from "./task2.js";
+      import { task3 } from "./task3.js";
+      import { task4 } from "./task4.js";
+      import { task5 } from "./task5.js";
+
+      let inputMessage;
+
+      do {
+        inputMessage = prompt("Please, choose a file:");
+        console.clear();
+
+        if (isNaN(inputMessage) || inputMessage === null) {
+          if (isNaN(inputMessage)) {
+            alert("Error!");
+            continue;
+          } else {
+            alert("canceled");
+            break;
+          }
+        } else {
+          inputMessage = Number(inputMessage);
+
+          switch (inputMessage) {
+            case 1:
+              task1();
+              break;
+
+            case 2:
+              task2();
+              break;
+
+            case 3:
+              task3();
+              break;
+            case 4:
+              task4();
+              break;
+            case 5:
+              task5();
+              break;
+
+            default:
+              alert("Enter a number from 1 to 6!");
+          }
+        }
+      } while (true);
+    </script>
+  </body>
+</html>
