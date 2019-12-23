@@ -47,14 +47,6 @@ function handleRefs(e) {
   handleListClose();
 }
 
-// function handleKeyDown(e) {
-//   if (event.code !== "Escape") {
-//     return;
-//   }
-
-//   handleListClose();
-// }
-
 function handleKeyPress(e) {
   if (e.code === "Escape") {
     const divKey = document.querySelector("div.lightbox");
