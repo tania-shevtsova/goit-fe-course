@@ -28,7 +28,7 @@ theme.addEventListener('change', e => {
     body.classList.add(Theme.DARK);
     body.classList.remove(Theme.LIGHT);
   } else if (body.classList.contains(Theme.DARK)) {
-    localStorage.removeItem('Theme', 'LIGHT');
+    localStorage.removeItem('Theme', Theme.LIGHT);
 
     body.classList.remove(Theme.DARK);
     body.classList.add(Theme.LIGHT);
